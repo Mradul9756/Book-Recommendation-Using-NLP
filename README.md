@@ -1,11 +1,11 @@
 # Book-Recommendation-Using-NLP
 
-DOCUMENTATION OF CONCEPTS AND WORKFLOW
+## DOCUMENTATION OF CONCEPTS AND WORKFLOW
 In natural language understanding (NLU) tasks, there is a hierarchy of lenses through which we can extract meaning — from words to sentences to paragraphs to documents. At the document level, one of the most useful ways to understand text is by analyzing its topics (also refer NER). The process of learning, recognizing, and extracting these topics across a collection of documents is called topic modeling.
 Overview
 All topic models are based on the same basic assumption:
-● each document consists of a mixture of topics, and
-● each topic consists of a collection of words.
+* each document consists of a mixture of topics, and
+* each topic consists of a collection of words.
 In other words, topic models are built around the idea that the semantics of our document are actually being governed by some hidden, or “latent,” variables that we are not observing. As a result, the goal of topic modeling is to uncover these latent variables — topics — that shape the meaning of our document and corpus.
 Topic Modeling Difference and Related Algorithms
 Topic Modeling is performed on unsupervised information and has a clear distinction from text classification and clustering tasks. Unlike text classification or clustering, which aims to make information retrieval easy, and make clusters of documents, Topic Modeling is not aiming to find similarities in documents. In Topic Modeling, usually, there is a plurality of topics, and text is distributed.
@@ -20,11 +20,11 @@ require
   many generic words which are not useful.
  
  Applications of Topic Modeling
-● text mining
-● text classification
-● text summarization,
-● information retrieval,
-● and recommendation engines.
+* text mining
+* text classification
+* text summarization,
+* information retrieval,
+* and recommendation engines.
 LDA
 The algorithm was first introduced in 2003 and treats topics as probability distributions for the occurrence of different words.
 Top2Vec
@@ -83,11 +83,11 @@ Here is the code for what happens when a user visits the root URL of the website
 @app.route('/')
 def homepage():
 
- # Create a Cloud Datastore client.
+### Create a Cloud Datastore client.
     datastore_client = datastore.Client()
     # Use the Cloud Datastore client to fetch information from
 Datastore about
-# each photo.
+### each photo.
     query = datastore_client.query(kind='Faces')
     image_entities = list(query.fetch())
     # Return a Jinja2 HTML template and pass in image_entities as a
@@ -96,7 +96,7 @@ parameter.
 image_entities=image_entities)
 Datastore is Google Cloud's NoSQL database solution. Data is stored in objects called entities. Each entity is assigned a unique identifying key, which can be created using a kind and a key name string. A kind is an organizational bucket for what type of entity it is. For example, we might want to set up kinds for Photos, People, and Animals.
 Each entity can have multiple developer-defined properties, which can have values of a number of types, including integers, floats, strings, dates, or binary data:
-   # Create a Cloud Datastore client.
+### Create a Cloud Datastore client.
     datastore_client = datastore.Client()
 
      # Fetch the current date / time.
