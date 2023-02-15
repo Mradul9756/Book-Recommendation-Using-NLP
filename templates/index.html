@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon Book Recommender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div class="container-sm">
+      <h1>Hello, stranger! What kind of book are you looking for?</h1>
+      <form action="/results/" method="GET" target="_self" enctype="text/plain">
+        <div class="row mb-3">
+          <div class="col-sm-5">
+            <label for="QueryTextarea" class="col-sm-10 col-form-label-lg">Describe an ideal book for you</label>
+            <textarea name="query" class="form-control form-control-lg" id="QueryTextarea" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-5">
+            <label for="QueryTextarea" class="col-sm-10 col-form-label-lg">Or use keywords</label>
+            <input name="keywords" class="form-control form-control-lg" id="QueryTextarea" rows="3" />
+          </div>
+        </div>
+        <button type="reset" class="btn btn-danger">Clear</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    <br />
+    {% block result %}
+
+    {% endblock %}
+  </body>
+</html>
