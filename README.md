@@ -1,4 +1,5 @@
 # Book-Recommendation-Using-NLP
+<img width="1162" alt="Screen Shot 2023-02-15 at 12 13 40 AM" src="https://user-images.githubusercontent.com/63217569/218970434-b4980bd5-5661-464b-a498-96a839971891.png">
 
 ## DOCUMENTATION OF CONCEPTS AND WORKFLOW
 In natural language understanding (NLU) tasks, there is a hierarchy of lenses through which we can extract meaning — from words to sentences to paragraphs to documents. At the document level, one of the most useful ways to understand text is by analyzing its topics (also refer NER). The process of learning, recognizing, and extracting these topics across a collection of documents is called topic modeling.
